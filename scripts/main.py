@@ -400,6 +400,9 @@ while True:
             break
     else:
         # Print command
+        if next_action_count > 0 :
+            logger.typewriter_log("Actions left without your input :", Fore.RED, next_action_count)
+        
         logger.typewriter_log(
             "NEXT ACTION: ",
             Fore.CYAN,
